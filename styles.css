@@ -1,0 +1,97 @@
+/**{
+	outline: 1px red solid;
+}*/
+body {
+	padding-top: 20px;
+background-color: #333333;
+}
+
+
+/*Header*/
+.logo {
+	position: absolute;
+	left: 20px;
+}
+
+.logo img {
+	border-radius: 8px;
+}
+
+.title {
+	position: relative;
+	width: 40%;
+	margin: 0 auto;
+	font-family: verdana;
+	font-size: 50px;
+	font-weight: bold;
+	color: white; 
+	text-align: center;
+}
+
+
+/*Quiz Section*/
+.quiz-questions {
+	position: relative;
+	margin-top: 180px;
+	text-align: center;
+	font-size: 40px;
+	font-family: garamond;
+	color: white;
+}
+.question2, .question3, .question4 {
+	display: none;
+}
+.picture {
+	overflow: hidden;
+	height: 350px;
+	width: 350px;
+	position: relative;
+	margin: 30px auto 0 auto;
+}
+.image1, .image2, .image3, .image4 {
+height: 350px;
+width: 350px;
+}
+.image2, .image3, .image4 {
+	display: none;
+}
+.selectedAnswer {
+	background-color: yellow;
+}
+
+/*Answers*/
+.answers {
+	height: 250px;
+/*	outline: 3px green solid;*/
+}
+.answers1, .answers2, .answers3, .answers4 {
+	display: flex;
+}
+.answers2, .answers3, .answers4 {
+	display: none;	
+} 
+.choice {
+	cursor: pointer;
+	padding: 10px;
+	margin: 20px 85px;
+	flex: 1;
+	background-color: #0033CC;
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+}
+.text {
+	color: white;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+
+
+
+
+
+
+

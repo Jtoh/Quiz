@@ -1,6 +1,6 @@
-/**{
+*{
 	outline: 1px red solid;
-}*/
+}
 body {
 	padding-top: 20px;
 background-color: #333333;
@@ -55,11 +55,11 @@ width: 350px;
 .image2, .image3, .image4 {
 	display: none;
 }
+
+/*Answers*/
 .selectedAnswer {
 	background-color: yellow;
 }
-
-/*Answers*/
 .answers {
 	height: 250px;
 /*	outline: 3px green solid;*/
@@ -81,14 +81,43 @@ width: 350px;
 	border-radius: 100%;
 }
 .text {
+	display: inline-block;
 	color: white;
-	width: 80px;
-	height: 80px;
 	text-align: center;
 	vertical-align: middle;
 	margin: auto;
 }
 
+/*Correct/Incorrect*/
+.correct, .incorrect {
+	height: 200px;
+	width: 500px;
+	background-color: #0066FF;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	border-radius: 10px;
+	position: relative;
+	margin: 0 auto;
+	top: -500px;
+	/*display: none;*/
+}
+.correct-incorrect {
+/*margin-top: 30px;*/
+}
+.incorrect {
+	display: none;
+}
+.ok {
+	height: 70px;
+	width: 70px;
+	background-color: #333333;
+	padding: 8px;
+	border-radius: 8px;
+	position: relative;
+	top: 80px;
+	margin: 0 auto;
+}
 
 
 

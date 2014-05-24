@@ -57,15 +57,13 @@ width: 350px;
 }
 
 /*Answers*/
-.selectedAnswer {
-	background-color: yellow;
-}
 .answers {
 	height: 250px;
 /*	outline: 3px green solid;*/
 }
 .answers1, .answers2, .answers3, .answers4 {
 	display: flex;
+	justify-content: space-around;
 }
 .answers2, .answers3, .answers4 {
 	display: none;	
@@ -73,12 +71,13 @@ width: 350px;
 .choice {
 	cursor: pointer;
 	padding: 10px;
-	margin: 20px 85px;
-	flex: 1;
 	background-color: #0033CC;
 	height: 120px;
 	width: 120px;
 	border-radius: 100%;
+}
+.selectedAnswer {
+	background-color: yellow;
 }
 .text {
 	display: inline-block;
@@ -97,13 +96,16 @@ width: 350px;
 	font-size: 30px;
 	color: white;
 	border-radius: 10px;
-	position: relative;
-	margin: 0 auto;
-	top: -500px;
-	/*display: none;*/
+	position: absolute;
+	margin-top: -100px;
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+	display: none;
 }
 .correct-incorrect {
-/*margin-top: 30px;*/
+margin-top: 20px;
+/*line-height: 90px;*/
 }
 .incorrect {
 	display: none;
@@ -114,12 +116,12 @@ width: 350px;
 	background-color: #333333;
 	padding: 8px;
 	border-radius: 8px;
-	position: relative;
-	top: 80px;
-	margin: 0 auto;
+	margin: 30px auto;
 }
 
-
+/*.answer-status, .answer-status .correct, .answer-status .incorrect {display: none;}
+.answer-status.correct .correct {display:block;}
+.answer-status.incorrect .incorrect {display:block;}*/
 
 
 
